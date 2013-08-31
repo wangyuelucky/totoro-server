@@ -246,16 +246,4 @@
             duration: test.duration
         }
     }
-
-    var totoro = window.totoro || (window.totoro = {})
-
-    // test output
-    totoro.log = function(data) {
-        var id = location.href.match(/runner\/([^/]+)\//)[1]
-        window.report({
-            orderId: id,
-            action: 'debug',
-            info: data
-        })
-    }
 })()
