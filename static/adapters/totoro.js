@@ -24,4 +24,14 @@
         })
         return true
     }
+
+      // test output
+    totoro.log = function() {
+        report({
+            orderId: id,
+            action: 'log',
+            info: [].slice.call(arguments, 0)
+        })
+    }
+
 })()
